@@ -35,6 +35,15 @@ const app = http.createServer((req, res) => {
         return undefined;
       }
 
+      if (parsedRequest.method === 'GET' && parsedRequest.url.pathname === '/api/cowsayPage') {
+        res.writeHead(200, { 'Content-Type': 'application/json' });
+        res.write(JSON.stringify({
+        }));
+  
+        res.end();
+        return undefined;
+      }
+
       if (parsedRequest.method === 'POST' && parsedRequest.url.pathname === '/echo') {
         res.writeHead(200, { 'Content-Type': 'application/json' });
         res.write(JSON.stringify(parsedRequest.body));
