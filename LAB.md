@@ -2,32 +2,32 @@
 ======
 
 ## Submission Instructions
-* Work in a fork of this repository
-* Work in a branch on your fork
+<!-- * Work in a fork of this repository
+* Work in a branch on your fork -->
 * Open a pull request to your master branch.
 * Submit on canvas a question and observation, how long you spent, and a link to your pull request
 
 ## Configuration
-Configure the root of your repository with the following files and directories. Thoughfully name and organize any aditional configuration or module files.
+Configure the root of your repository with the following files and directories. Thoughfully name and organize any additional configuration or module files.
 * **README.md** - contains documentation
-* **.env** - contains env variables (should be git ignored)
-* **.gitignore** - contains a [robust](http://gitignore.io) `.gitignore` file
-* **.eslintrc** - contains the course linter configuration
-* **.eslintignore** - contains the course linter ignore configuration
-* **package.json** - contains npm package config
-  * create a `lint` script for running eslint
-  * create a `test` script for running tests
-  * create a `start` script for running your server
-* **.travis.yml** - contains Travis CI configuration
-* **lib/** - contains module definitions
-* **\_\_test\_\_/** - contains unit tests
+<!-- * **.env** - contains env variables (should be git ignored) -->
+<!-- * **.gitignore** - contains a [robust](http://gitignore.io) `.gitignore` file -->
+<!-- * **.eslintrc** - contains the course linter configuration -->
+<!-- * **.eslintignore** - contains the course linter ignore configuration -->
+<!-- * **package.json** - contains npm package config -->
+  <!-- * create a `lint` script for running eslint -->
+  <!-- * create a `test` script for running tests -->
+  <!-- * create a `start` script for running your server -->
+<!-- * **.travis.yml** - contains Travis CI configuration -->
+<!-- * **lib/** - contains module definitions -->
+<!-- * **\_\_test\_\_/** - contains unit tests -->
 
 ## Feature Tasks
 For this assignment you will be building a HTTP server.
 #### Server Module
-The server module is responsible for creating an http server defining all route behavior and exporting an interface for starting and stoping the server. It should export an object with `start` and `stop` methods. The start and stop methods should each return a promise that resolves on success and rejects on error.
-###### GET /
-When a client makes a GET request to / the server should send baack html with a project description and a anchor to /cowsay.
+The server module is responsible for creating an http server defining all route behavior and exporting an interface for starting and stopping the server. It should export an object with `start` and `stop` methods. The start and stop methods should each return a promise that resolves on success and rejects on error.
+###### GET / - default
+When a client makes a GET request to / the server should send back html with a project description and an anchor to /cowsay.
 ``` html
 <!DOCTYPE html>
 <html>
