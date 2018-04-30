@@ -25,6 +25,7 @@
     "dotenv": "^5.0.1",
     "faker": "^4.1.0",
     "nodemon": "^1.17.3",
+    "superagent": "^3.8.3",
     "winston": "^3.0.0-rc5"
   },
   "directories": {
